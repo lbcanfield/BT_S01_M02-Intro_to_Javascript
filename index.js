@@ -201,7 +201,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer) {
-     console.log(user, computer);
+     // console.log(user, computer);
      if (user === computer) {
           return "it's a tie";
      }
@@ -249,11 +249,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/) {
-     /*add your code here*/
+function miles(km) {
+     return km * 0.621371
 }
 
-
+// console.log(miles(5));
 
 //Task 5b - Feet to CM
 /*
@@ -263,8 +263,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/) {
-     /*add your code here*/
+function feet(cm) {
+     return cm / 30.48;
 }
 
 
@@ -283,10 +283,15 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/) {
-     /*add your code here*/
+function annoyingSong(x) {
+     return `${x} bottles of soda on the wall, ${x} bottles of soda, take one down pass it around ${x - 1} bottles of soda on the wall`
 }
 
+let numBottles = 100;
+while (numBottles > 0) {
+     console.log(annoyingSong(numBottles));
+     numBottles -= 1;
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
