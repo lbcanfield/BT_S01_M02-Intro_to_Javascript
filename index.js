@@ -19,8 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = Math.floor(Math.random() * 100);
+if (votingAge >= 18) {
+     console.log(true)
+}
+else {
+     console.log(false)
+}
 
 /*
 Task 1b - Values (not auto tested)
@@ -61,8 +66,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -77,8 +82,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -127,10 +132,10 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
       
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
-*/  
+*/
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -156,8 +161,8 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
+function game(user, computer) {
+     /*add your code here*/
 }
 
 
@@ -173,8 +178,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -187,8 +192,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -207,8 +212,8 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(/*add your code here*/) {
+     /*add your code here*/
 }
 
 
@@ -227,8 +232,8 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(/*Your Code here */) {
+     /*Your Code here */
 }
 
 
@@ -247,26 +252,26 @@ HINT - try looking up the .includes() method
 
 
 function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+     /*add your code here*/
 }
 
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
-  console.log('its working');
-  return 'bar';
+function foo() {
+     console.log('its working');
+     return 'bar';
 }
 foo();
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 module.exports = {
-  foo,
-  multiply,
-  dogYears,
-  hungryDog,
-  game,
-  miles,
-  feet,
-  annoyingSong,
-  grade
+     foo,
+     multiply,
+     dogYears,
+     hungryDog,
+     game,
+     miles,
+     feet,
+     annoyingSong,
+     grade
 }
