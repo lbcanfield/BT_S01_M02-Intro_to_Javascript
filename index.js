@@ -143,7 +143,7 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 
 function hungryDog(weight, age) {
      if (age < 1) {
-          console.log("Puppy, age", age, "years", weight, "lbs");
+          // console.log("Puppy, age", age, "years", weight, "lbs");
           // 2-4
           if (age > 2 / 12 && age < 4 / 12) {
                return weight * 0.1;
@@ -159,7 +159,7 @@ function hungryDog(weight, age) {
 
      }
      else {
-          console.log("Adult, age", age, "years", weight, "lbs");
+          // console.log("Adult, age", age, "years", weight, "lbs");
           if (weight <= 5) {
                return (weight * 0.05);
           }
@@ -175,9 +175,9 @@ function hungryDog(weight, age) {
      }
 }
 
-console.log(hungryDog(25, 0.25))
+// console.log(hungryDog(25, 0.25))
 
-console.log(hungryDog(4, 1))
+// console.log(hungryDog(4, 1))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -201,10 +201,42 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer) {
-     /*add your code here*/
+     console.log(user, computer);
+     if (user === computer) {
+          return "it's a tie";
+     }
+     else if (user === 'rock') {
+          if (computer === 'scissors') {
+               return 'you win!';
+          }
+          return 'you lose!';
+     }
+     else if (user === 'paper') {
+          if (computer === 'rock') {
+               return 'you win!';
+          }
+          return 'you lose!';
+     }
+     else {
+          if (computer === 'paper') {
+               return 'you win!';
+          }
+          return 'you lose!';
+     }
 }
 
+let userChoice = "rock", cpuChoice = (Math.floor(Math.random() * 100) % 3)
+if (cpuChoice === 0) {
+     cpuChoice = 'rock';
+}
+else if (cpuChoice === 1) {
+     cpuChoice = 'paper';
+}
+else {
+     cpuChoice = 'scissors';
+}
 
+game(userChoice, cpuChoice);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
