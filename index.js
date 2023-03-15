@@ -308,11 +308,28 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */) {
-     /*Your Code here */
+function grade(x) {
+     if (x < 0 || x > 100) {
+          return "Grade is invalid";
+     }
+     else if (x <= 100 && x >= 90) {
+          return 'you got an A';
+     }
+     else if (x < 90 && x >= 80) {
+          return 'you got a B';
+     }
+     else if (x < 80 && x >= 70) {
+          return 'you got a C';
+     }
+     else if (x < 70 && x >= 60) {
+          return 'you got a D';
+     }
+     else {
+          return 'you got an F';
+     }
 }
 
-
+// console.log(grade(50));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
