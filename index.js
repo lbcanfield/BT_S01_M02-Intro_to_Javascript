@@ -39,8 +39,11 @@ Do the following:
    HINT: no function required
 */
 
+let firstThing = 1, secondThing = 1;
 
-
+if (firstThing === secondThing) {
+     console.log(firstThing);
+}
 
 
 /*
@@ -54,7 +57,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let task1cVar = "1999";
+task1cVar = Number(task1cVar);
+console.log(task1cVar);
 
 
 /*
@@ -66,10 +71,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/) {
-     /*add your code here*/
+function multiply(num1, num2) {
+     return (num1 * num2);
 }
 
+console.log(multiply(1, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -82,11 +88,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/) {
-     /*add your code here*/
+function dogYears(dogAge) {
+     return dogAge * 7;
 }
 
-
+const randomDogAge = Math.floor((Math.random() * 100) % 10) + 1;
+console.log(dogYears(randomDogAge));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
